@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
     <title>Speaker Vault</title>
 
@@ -25,32 +26,23 @@
 
     <!-- header section   -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <div>
-                <img src="assest/pic-1.jpg" style="border-radius: 10px;" width="40px" height="40px" alt="">
-                <a class="navbar-brand" href="#" style="color: #00B894; font-weight: 800;">Speaker Vault</a>
+            <div class="d-flex align-items-center">
+                <img src="assest/pic-1.jpg" style="border-radius: 50%; margin-right: 12px;" width="40px" height="40px" alt="">
+                <a class="navbar-brand" href="#">Speaker Vault</a>
             </div>
 
-            <button class="btn btn-primarys newUser" data-bs-toggle="modal" data-bs-target="#userForm"> Add New <i
-                    class="bi bi-people"></i></button>
-            <!-- <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              >
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
-        </div>
+            <button class="btn btn-primarys  newUser" data-bs-toggle="modal" data-bs-target="#userForm">
+                <i class="bi bi-plus-circle me-2"></i>Add New Visitor
+            </button>
         </div>
     </nav>
 
-    <!--  Termporary employee  or Visit ka data card ke form me   dynamically Banta hua  -->
-    <div class="container">
-        <h2 style="color: #fff">Visitor information.........</h2>
+    <!-- Container for visitor cards -->
+    <div class="container py-4">
         <div class="row" id="employeeContainer">
+            <!-- Cards will be dynamically added here -->
         </div>
     </div>
 
